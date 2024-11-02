@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso",
+    "category": "Classic",
+    "price": 3.5,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/LNd7YNZ/coffee20.webp"
+  },
+  {
+    "id": 2,
+    "name": "Cappuccino",
+    "category": "Classic",
+    "price": 4.0,
+    "rating": 4.6,
+    "image": "https://i.ibb.co.com/xzCLcRL/coffee19.webp"
+  },
+  {
+    "id": 3,
+    "name": "Latte",
+    "category": "Classic",
+    "price": 4.5,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/7Nwmt4P/coffee17.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Americano",
+    "category": "Classic",
+    "price": 3.25,
+    "rating": 4.4,
+    "image": "https://i.ibb.co.com/R6g3jfh/coffee16.webp"
+  },
+  {
+    "id": 5,
+    "name": "Macchiato",
+    "category": "Classic",
+    "price": 3.75,
+    "rating": 4.5,
+    "image": "https://i.ibb.co.com/30xLKgB/coffee15.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mocha",
+    "category": "Specialty",
+    "price": 5.0,
+    "rating": 4.6,
+    "image": "https://i.ibb.co.com/jh9nT3K/coffee18.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Flat White",
+    "category": "Specialty",
+    "price": 4.25,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/WBf0dMG/coffee13.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Affogato",
+    "category": "Specialty",
+    "price": 5.5,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/QjdQyk5/coffee8.webp"
+  },
+  {
+    "id": 9,
+    "name": "Ristretto",
+    "category": "Specialty",
+    "price": 4.2,
+    "rating": 4.4,
+    "image": "https://i.ibb.co.com/tcjQcLn/coffee12.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Irish Coffee",
+    "category": "Specialty",
+    "price": 6.0,
+    "rating": 4.9,
+    "image": "https://i.ibb.co.com/R0tyVbc/coffee10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cold Brew",
+    "category": "Cold Coffee",
+    "price": 4.75,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/gyZxfD9/coffee11.webp"
+  },
+  {
+    "id": 12,
+    "name": "Iced Latte",
+    "category": "Cold Coffee",
+    "price": 4.5,
+    "rating": 4.6,
+    "image": "https://i.ibb.co.com/nPrdg9Y/coffee9.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Iced Americano",
+    "category": "Cold Coffee",
+    "price": 3.75,
+    "rating": 4.5,
+    "image": "https://i.ibb.co.com/QjdQyk5/coffee8.webp"
+  },
+  {
+    "id": 14,
+    "name": "Iced Mocha",
+    "category": "Cold Coffee",
+    "price": 5.25,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/VgPTyj5/coffee7.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Frappuccino",
+    "category": "Cold Coffee",
+    "price": 5.5,
+    "rating": 4.9,
+    "image": "https://i.ibb.co.com/nzt3Cjw/coffee6.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Nitro Cold Brew",
+    "category": "Cold Coffee",
+    "price": 5.0,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/vm1H6F0/coffee5.webp"
+  },
+  {
+    "id": 17,
+    "name": "Caramel Macchiato",
+    "category": "Specialty",
+    "price": 5.25,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/wNbyc09/coffee4.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Vanilla Latte",
+    "category": "Specialty",
+    "price": 5.0,
+    "rating": 4.6,
+    "image": "https://i.ibb.co.com/4t4C9Bc/coffee3.webp"
+  },
+  {
+    "id": 19,
+    "name": "Espresso Con Panna",
+    "category": "Classic",
+    "price": 4.0,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/QjdQyk5/coffee8.webp"
+  },
+  {
+    "id": 20,
+    "name": "Iced Caramel Latte",
+    "category": "Cold Coffee",
+    "price": 5.0,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/KKXWQX1/coffee1.webp"
+  }
+]

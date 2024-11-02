@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "categories": "Classic",
+    "slug": "introduction-to-tech"
+  },
+  {
+    "id": 2,
+    "categories": "Specialty",
+    "slug": "exploring-the-universe"
+  },
+  {
+    "id": 3,
+    "categories": "Cold Coffee",
+    "slug": "classic-novels"
+  }
+]
