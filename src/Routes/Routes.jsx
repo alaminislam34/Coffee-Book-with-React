@@ -7,6 +7,7 @@ import Classic from "../Components/Pages/Classic";
 import Specialty from "../Components/Pages/Specialty";
 import ColdCoffee from "../Components/Pages/ColdCoffee";
 import HomeCoffee from "../Components/Pages/HomeCoffee";
+import CoffeeDetails from "../Components/Pages/CoffeeDetails";
 
 const router = createBrowserRouter([
   {
@@ -16,22 +17,21 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("/categories.json"),
         children: [
           {
             path: "/",
             element: <HomeCoffee></HomeCoffee>,
           },
           {
-            path: "/category/Classic",
+            path: "/category/Brewed Coffee",
             element: <Classic />,
           },
           {
-            path: "/category/Specialty",
+            path: "/category/Iced Coffee",
             element: <Specialty />,
           },
           {
-            path: "/category/Cold Coffee",
+            path: "/category/Dessert Coffee",
             element: <ColdCoffee />,
           },
         ],
@@ -44,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/category/:id",
+        element: <CoffeeDetails />,
       },
     ],
   },

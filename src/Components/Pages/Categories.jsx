@@ -1,8 +1,15 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import "./Common.css";
+import { useEffect, useState } from "react";
 
-const Categories = ({ categories }) => {
+const Categories = () => {
+  const [categories, setCategories] = useState([]);
+  useEffect(() => {
+    fetch("/categories.json")
+      .then((data) => data.json())
+      .then((data) => setCategories(data));
+  }, []);
   return (
     <div>
       <div

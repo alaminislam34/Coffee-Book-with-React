@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "categories": "Classic",
+    "categories": "Brewed Coffee",
     "slug": "introduction-to-tech"
   },
   {
     "id": 2,
-    "categories": "Specialty",
+    "categories": "Iced Coffee",
     "slug": "exploring-the-universe"
   },
   {
     "id": 3,
-    "categories": "Cold Coffee",
+    "categories": "Dessert Coffee",
     "slug": "classic-novels"
   }
 ]
