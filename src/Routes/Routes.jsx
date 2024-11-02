@@ -25,17 +25,14 @@ const router = createBrowserRouter([
           {
             path: "/category/Classic",
             element: <Classic />,
-            loader: () => fetch("/coffee.json"),
           },
           {
             path: "/category/Specialty",
             element: <Specialty />,
-            loader: () => fetch("/coffee.json"),
           },
           {
             path: "/category/Cold Coffee",
             element: <ColdCoffee />,
-            loader: () => fetch("/coffee.json"),
           },
         ],
       },
