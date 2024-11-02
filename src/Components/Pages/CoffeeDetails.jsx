@@ -63,7 +63,7 @@ const CoffeeDetails = () => {
           onClick={() => handleAddToFavorite(favorite)}
           className={`btn ${
             disabled ? "disabled" : ""
-          } hover:bg-green-500 hover:text-white`}
+          } bg-yellow-500 text-black`}
           id="favoriteBtn"
           disabled={disabled}
         >
