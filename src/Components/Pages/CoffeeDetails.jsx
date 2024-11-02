@@ -20,6 +20,9 @@ const CoffeeDetails = () => {
     if (coffee.length > 0) {
       const addFavorite = coffee.find((coffee) => coffee.id === coffeeId);
       setFavorite(addFavorite);
+      const favoriteList = JSON.parse(localStorage.getItem("favorite")) || [];
+      const isFavorite = favoriteList.some((coffee) => coffee.id === coffeeId);
+      setDisabled(isFavorite);
     }
   }, [coffee, coffeeId]);
   if (!favorite) {
