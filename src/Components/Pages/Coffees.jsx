@@ -9,7 +9,7 @@ const Coffees = () => {
       .then((data) => setCoffees(data));
   }, []);
   const handleSortedByPrice = () => {
-    const sort = [...coffees].sort((a, b) => a.price - b.price);
+    const sort = [...coffees].sort((a, b) => a.popularity - b.popularity);
     setCoffees(sort);
   };
 
@@ -21,10 +21,16 @@ const Coffees = () => {
   return (
     <div>
       <div className="flex justify-end items-center gap-4 mt-6">
-        <button onClick={handleSortedByPrice} className="btn">
-          Sort by price
+        <button
+          onClick={handleSortedByPrice}
+          className="btn hover:bg-green-500 hover:text-white font-semibold"
+        >
+          Sort by popularity
         </button>
-        <button onClick={handleSortedByRating} className="btn">
+        <button
+          onClick={handleSortedByRating}
+          className="btn hover:bg-green-500 hover:text-white font-semibold"
+        >
           Sort by rating
         </button>
       </div>

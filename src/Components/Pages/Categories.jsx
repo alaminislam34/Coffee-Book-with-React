@@ -14,7 +14,7 @@ const Categories = () => {
     <div>
       <div
         role="tablist"
-        className="tabs tabs-lifted border-b-green-500 common_class"
+        className="tabs tabs-lifted border-b-green-500 common_class py-4"
       >
         {categories.map((category) => {
           return (
@@ -22,7 +22,7 @@ const Categories = () => {
               key={category.categories}
               to={`/category/${category.categories}`}
               role="tab"
-              className="tab border font-bold md:text-lg lg:text-xl py-4"
+              className="tab border font-bold md:text-lg lg:text-xl"
             >
               {category.categories}
             </NavLink>

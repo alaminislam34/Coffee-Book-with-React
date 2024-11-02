@@ -43,7 +43,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <Link to="/" className=" text-xl pl-6">
+            <Link to="/" className=" text-xl md:text-2xl font-bold pl-6">
               COFFEE_BOOK
             </Link>
           </div>

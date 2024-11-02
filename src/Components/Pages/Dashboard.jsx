@@ -4,17 +4,17 @@ import { RiDeleteBinLine } from "react-icons/ri";
 const Dashboard = () => {
   const [coffees, setCoffees] = useState([]);
   useEffect(() => {
-    fetch("/coffee.json")
-      .then((data) => data.json())
-      .then((data) => setCoffees(data));
+    const favoriteList = JSON.parse(localStorage.getItem("favorite")) || [];
+    setCoffees(favoriteList);
   }, []);
   const handleRemove = (id) => {
     const remove = coffees.filter((coffee) => coffee.id !== id);
     setCoffees(remove);
+    localStorage.setItem("favorite", JSON.stringify(remove));
   };
   return (
     <div>
-      <div className="flex flex-col justify-center items-center space-y-4 my-6 md:my-10 lg:my-12">
+      <div className="flex flex-col justify-center items-center space-y-4 my-6 md:my-10 lg:my-12 mx-4 text-center">
         <h1 className="text-xl md:text-2xl lg:text-4xl font-semibold">
           Welcome to Dashboard
         </h1>

@@ -8,8 +8,8 @@ const HomeCoffee = () => {
       .then((data) => data.json())
       .then((data) => setCoffees(data.slice(0, 9)));
   }, []);
-  const handleSortedByPrice = () => {
-    const sort = [...coffees].sort((a, b) => a.price - b.price);
+  const handleSortedByPopularity = () => {
+    const sort = [...coffees].sort((a, b) => a.popularity - b.popularity);
     setCoffees(sort);
   };
 
@@ -19,16 +19,29 @@ const HomeCoffee = () => {
   };
 
   return (
-    <div>
-      <div className="flex justify-end items-center gap-4 mt-6">
-        <button onClick={handleSortedByPrice} className="btn">
-          Sort by price
-        </button>
-        <button onClick={handleSortedByRating} className="btn">
-          Sort by rating
-        </button>
+    <div className="w-11/12 mx-auto">
+      <div className="flex justify-between items-center gap-4 mt-6 my-4">
+        <div>
+          <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">
+            Sorted by Rating & Popularity{" "}
+          </h2>
+        </div>
+        <div>
+          <button
+            onClick={handleSortedByPopularity}
+            className="btn hover:bg-green-500 hover:text-white font-semibold"
+          >
+            Sort by popularity
+          </button>
+          <button
+            onClick={handleSortedByRating}
+            className="btn hover:bg-green-500 hover:text-white font-semibold"
+          >
+            Sort by rating
+          </button>
+        </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border m-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border">
         {coffees.map((coffee, index) => {
           return (
             <Link to={`/category/${coffee.id}`} key={index}>
@@ -46,7 +59,7 @@ const HomeCoffee = () => {
                   <p>Type: {coffee.type}</p>
                   <p>Origin: {coffee.origin}</p>
                   <p>Rating: {coffee.rating} </p>
-                  <p>Price: {coffee.price} $</p>
+                  <p>Popularity: {coffee.popularity}</p>
                 </div>
               </div>
             </Link>

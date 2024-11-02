@@ -11,8 +11,8 @@ const ColdCoffee = () => {
   const classic = coffees.filter(
     (Coffee) => Coffee.category === "Dessert Coffee"
   );
-  const handleSortedByPrice = () => {
-    const sort = [...coffees].sort((a, b) => a.price - b.price);
+  const handleSortedByPopularity = () => {
+    const sort = [...coffees].sort((a, b) => a.popularity - b.popularity);
     setCoffees(sort);
   };
 
@@ -23,13 +23,26 @@ const ColdCoffee = () => {
 
   return (
     <div>
-      <div className="flex justify-end items-center gap-4 mt-6">
-        <button onClick={handleSortedByPrice} className="btn">
-          Sort by price
-        </button>
-        <button onClick={handleSortedByRating} className="btn">
-          Sort by rating
-        </button>
+      <div className="flex justify-between items-center gap-4 mt-6 my-4">
+        <div>
+          <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">
+            Sorted by Rating & Popularity{" "}
+          </h2>
+        </div>
+        <div>
+          <button
+            onClick={handleSortedByPopularity}
+            className="btn hover:bg-green-500 hover:text-white font-semibold"
+          >
+            Sort by popularity
+          </button>
+          <button
+            onClick={handleSortedByRating}
+            className="btn hover:bg-green-500 hover:text-white font-semibold"
+          >
+            Sort by rating
+          </button>
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-8">
         {classic.map((coffee, index) => {
