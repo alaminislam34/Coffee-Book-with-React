@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { RiDeleteBinLine } from "react-icons/ri";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Dashboard = () => {
   const [coffees, setCoffees] = useState([]);
@@ -10,10 +12,13 @@ const Dashboard = () => {
   const handleRemove = (id) => {
     const remove = coffees.filter((coffee) => coffee.id !== id);
     setCoffees(remove);
+    toast("Favorite item removed", {
+      style: { color: "red" },
+    });
     localStorage.setItem("favorite", JSON.stringify(remove));
   };
   return (
-    <div>
+    <div className="">
       <div className="flex flex-col justify-center items-center space-y-4 my-6 md:my-10 lg:my-12 mx-4 text-center">
         <h1 className="text-xl md:text-2xl lg:text-4xl font-semibold">
           Welcome to Dashboard
@@ -55,6 +60,7 @@ const Dashboard = () => {
           );
         })}
       </div>
+      <ToastContainer />
     </div>
   );
 };

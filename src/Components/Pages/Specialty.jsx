@@ -46,7 +46,7 @@ const Specialty = () => {
         {classic.map((coffee, index) => {
           return (
             <Link to={`/category/${coffee.id}`} key={index}>
-              <div className="border hover:shadow-xl rounded-lg hover:scale-105 transition-transform duration-700 overflow-hidden">
+              <div className="border shadow-md hover:shadow-xl rounded-lg hover:scale-105 transition-transform duration-700 overflow-hidden">
                 <img
                   className="aspect-video object-cover"
                   src={coffee.image}

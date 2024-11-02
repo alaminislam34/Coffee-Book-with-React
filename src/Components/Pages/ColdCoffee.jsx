@@ -29,7 +29,7 @@ const ColdCoffee = () => {
             Sorted by Rating & Popularity{" "}
           </h2>
         </div>
-        <div>
+        <div className="flex flex-row gap-2">
           <button
             onClick={handleSortedByPopularity}
             className="btn hover:bg-green-500 hover:text-white font-semibold"
@@ -48,7 +48,7 @@ const ColdCoffee = () => {
         {classic.map((coffee, index) => {
           return (
             <Link to={`/category/${coffee.id}`} key={index}>
-              <div className="border hover:shadow-xl rounded-lg hover:scale-105 transition-transform duration-700 overflow-hidden">
+              <div className="border shadow-md hover:shadow-xl rounded-lg hover:scale-105 transition-transform duration-700 overflow-hidden">
                 <img
                   className="aspect-video object-cover"
                   src={coffee.image}

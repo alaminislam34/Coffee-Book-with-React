@@ -50,10 +50,10 @@ const CoffeeDetails = () => {
     }
   };
   return (
-    <div className="my-6 md:my-10 lg:my-12 w-11/12 mx-auto space-y-4 md:space-y-5">
-      <h2 className="text-xl md:text-2xl lg:text-4xl">{description}</h2>
+    <div className="my-6 md:my-10 lg:my-12 w-11/12 mx-auto space-y-4 md:space-y-5 p-2 md:p-4 lg:p-6">
+      <h2 className="text-xl md:text-2xl lg:text-3xl">{description}</h2>
       <img
-        className="h-[80vh] w-full object-cover rounded-lg"
+        className="lg:h-[80vh] md:h-[70vh] h-[50vh] w-full object-cover rounded-lg"
         src={image}
         alt=""
       />

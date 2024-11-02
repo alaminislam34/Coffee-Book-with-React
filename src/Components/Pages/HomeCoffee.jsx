@@ -26,7 +26,7 @@ const HomeCoffee = () => {
             Sorted by Rating & Popularity{" "}
           </h2>
         </div>
-        <div>
+        <div className="flex flex-row gap-2">
           <button
             onClick={handleSortedByPopularity}
             className="btn hover:bg-green-500 hover:text-white font-semibold"
@@ -41,11 +41,11 @@ const HomeCoffee = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {coffees.map((coffee, index) => {
           return (
             <Link to={`/category/${coffee.id}`} key={index}>
-              <div className="border hover:shadow-xl rounded-lg hover:scale-105 transition-transform duration-700 overflow-hidden">
+              <div className="border shadow-md hover:shadow-xl rounded-lg hover:scale-105 transition-transform duration-700 overflow-hidden">
                 <img
                   className="aspect-video object-cover"
                   src={coffee.image}

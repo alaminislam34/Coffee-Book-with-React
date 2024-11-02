@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="bg-yellow-50/50">
       <Navbar></Navbar>
       <div className="min-h-[calc(100vh_-_228px)] container mx-auto">
         <Outlet />

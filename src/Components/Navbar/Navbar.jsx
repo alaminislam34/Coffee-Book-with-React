@@ -49,13 +49,13 @@ const Navbar = () => {
           </div>
           <div className="navbar-end pr-6 hidden lg:flex">
             <ul className="flex flex-row gap-6 Active font-semibold menu-horizontal px-1">
-              <li>
+              <li className="text-lg">
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li>
+              <li className="text-lg">
                 <NavLink to="/coffees">Coffees</NavLink>
               </li>
-              <li>
+              <li className="text-lg">
                 <NavLink to="/dashboard">Dashboard</NavLink>
               </li>
             </ul>
