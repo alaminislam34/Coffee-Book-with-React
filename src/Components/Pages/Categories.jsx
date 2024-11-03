@@ -19,7 +19,7 @@ const Categories = () => {
         {categories.map((category) => {
           return (
             <NavLink
-              key={category.categories}
+              key={category.id}
               to={`/category/${category.categories}`}
               role="tab"
               className="tab border font-bold md:text-lg lg:text-xl"

@@ -23,7 +23,7 @@ const Classic = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center gap-4 mt-6 my-4">
+      <div className="flex flex-wrap justify-between items-center gap-4 mt-6 my-4 mx-4">
         <div>
           <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">
             Sorted by Rating & Popularity{" "}
